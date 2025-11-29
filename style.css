@@ -50,23 +50,7 @@ body {
 #my-navbar-last-li{
     color: var(--main-color);
 }
-.navbar-icon-btn{
-    display: flex;
-    align-items: center;
-    border: none;
-    height: 20px;
-    width: 40px;
-    border-radius: var(--border-radius);
-    /* padding-top: 20px */
-    position: relative;
 
-}
-.navbar-icon{
-    position: absolute;
-    left:0px;
-    padding: 0px;
-    font-size: 22px;
-}
 /* From Uiverse.io by Galahhad */ 
 /* switch settings 👇 */
 
@@ -151,4 +135,31 @@ body {
   opacity: 1;
   width: 0;
   height: 0;
+}
+
+@media screen and (max-width:750px){
+    #ribbion-content-p{
+        display: none !important;
+    }
+    .my-navbar2{
+        background-color: var(--text-color-white);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        height: 100vh;
+        width: 250px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 20px;
+    }
+    .navbar-list-img{
+        display: inline-block;
+    }
+    .ui-switch{
+        display: none;
+    }
+}
+@media screen and (min-width:750px) {
+    .navbar-list-img{
+        display: none;
+    } 
 }
