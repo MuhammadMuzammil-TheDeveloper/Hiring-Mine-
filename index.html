@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="./images/Favicon-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,7 +27,46 @@
         <p id="ribbion-content-p">.Be the first to know when matching jobs go live</p>
       </div>
       <div>
-        <button class="btn btn-light" id="ribbion-btn1">Add Number</button>
+
+        <!-- Button trigger modal -->
+        <button class="btn btn-light" id="ribbion-btn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Number</button>
+
+<!-- Modal -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          <i class="fa-solid fa-lock"></i>
+          Sign in Required
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>To access our people search tool and connect with professionals, please sign in or create an account. Get access to:</p>
+        <ul>
+          <li>Advanced People search features</li>
+          <li> Professional networking Oppurtunites</li>
+          <li>Personlized recommendation</li>
+        </ul>
+        <button class="btn btn-primary" id="model-body-btn1"> 
+          <i class="fa-solid fa-lock"></i>
+          Sign in
+        </button>
+        <button class="btn btn-outline-primary" id="model-body-btn2">
+          <i class="fa-regular fa-user"></i>
+          Create Account</button>
+          <hr>
+          <p id="ppp"><i class="fa-regular fa-house"></i>
+          Continue browsing as guest</p>
+          <p id="ppp">Note: Some features may be limited in guest mode </p>
+      </div>
+      
+    </div>
+  </div>
+</div>
         <a href="#" class="btn btn-link" id="ribbion-btn2">Not Now</a>
       </div>
     </div>
@@ -101,7 +141,7 @@
        <p class="popular-searches-option">Backend</p>
        <p class="popular-searches-option">React</p>
        <p class="popular-searches-option">Node</p>
-       <p class="popular-searches-option">React Native/p>
+       <p class="popular-searches-option">React Native</p>
        <p class="popular-searches-option">Flutter</p>
        <p class="popular-searches-option">UI/UX</p>
        <p class="popular-searches-option">Designer</p>
@@ -110,7 +150,7 @@
        <p class="popular-searches-option">Marketting</p>
        <p class="popular-searches-option">Writer</p>
     </div>
-
+     <h1 id="hero-h1-text" class="AI-Agent-Heading">Find your dream jobs by chatting with <br> your AI agent.</h1>
     </div>
   </div>
 

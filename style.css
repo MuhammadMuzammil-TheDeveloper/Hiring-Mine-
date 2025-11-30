@@ -12,8 +12,6 @@
 
 body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    /* font family */
-
 }
 
 #ribbion {
@@ -46,7 +44,39 @@ body {
 #ribbion-btn2 {
     color: var(--text-color-white);
 }
-
+.modal-body>button{
+    width: 100% !important;
+    margin: 5px;
+}
+#model-body-btn1 {
+    border: none;
+    background-color: var(--main-color) !important;
+}
+#model-body-btn2{
+    color: var(--main-color);
+    border: var(--main-color);
+    outline: 1px solid var(--main-color);
+}
+#model-body-btn1:hover {
+    background-color: #251d5a !important;
+    box-shadow: var(--box-shadow);
+}
+#model-body-btn2:hover{
+    background-color: white;
+}
+.fa-lock{
+    color: var(--main-color) !important;
+}
+#ppp{
+    text-align: center;
+}
+.modal-content{
+    padding: 20px !important;
+    font-weight: 150;
+}
+.modal-content>ul{
+    list-style-type: var(--main-color) !important;
+}
 /* Navbar */
 .my-navbar img {
     width: 186.35px;
@@ -55,14 +85,14 @@ body {
 
 #my-navbar-last-li {
     color: var(--main-color);
+    outline:var(--main-color) !important;
 }
 .iconss{
     position: absolute;
     right: 10px;
     top: 10px;
 }
-/* From Uiverse.io by Galahhad */
-/* switch settings 👇 */
+
 .ui-switch {
     /* switch */
     --switch-bg: rgb(135, 150, 165);
@@ -298,10 +328,12 @@ body {
     color: var(--main-color); 
     border: 1px solid var(--main-color);
     border-radius: 6px;
-    /* margin: 10px; */
     flex: 0 1 auto;
+    font-weight: 750;
 }
-
+.AI-Agent-Heading{
+    font-size: 60px !important;
+}
 /* Media Quries */
 @media screen and (max-width:750px) {
     #ribbion-content-p {
