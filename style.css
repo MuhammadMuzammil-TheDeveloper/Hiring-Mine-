@@ -56,7 +56,11 @@ body {
 #my-navbar-last-li {
     color: var(--main-color);
 }
-
+.iconss{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 /* From Uiverse.io by Galahhad */
 /* switch settings 👇 */
 .ui-switch {
@@ -216,7 +220,7 @@ body {
 
 .input-container {
     position: relative;
-    width: 600px;
+    width: 50%;
     /* adjust as needed */
     margin: 30px auto;
 }
@@ -297,6 +301,8 @@ body {
     /* margin: 10px; */
     flex: 0 1 auto;
 }
+
+/* Media Quries */
 @media screen and (max-width:750px) {
     #ribbion-content-p {
         display: none !important;
@@ -332,5 +338,24 @@ body {
 @media screen and (max-width:600px) {
     #hero-h1-text {
         font-size: 30px;
+    }
+    .hero-section-text-p {
+        max-width: 82;
+    }
+}
+@media screen and (max-width:690px){
+    .input-container{
+     width: 90%;  
+    }   
+}
+@media screen and (max-width:420px){
+    #ribbion{
+        padding: 0px !important;
+    }
+    .input-container{
+     width: 90%;  
+    }
+    .hero-section-text-p {
+        max-width: 100%;
     }
 }
