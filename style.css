@@ -404,6 +404,7 @@ body {
     padding: 20px;
     background-color: var(--main-color);
     border: none;
+    z-index: 2  ;
 }
 #chatboxparent{
     position: relative;
@@ -438,7 +439,74 @@ body {
     background-color: white !important;
 }
 
+/* jobs-card-section */
+
+#jobs-card-section-heading{
+    color: #6815FF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+}
+#jobs-card-section-heading>span{
+    color: #3F3F3F;
+}
+#card-body-header{
+    display: flex;
+}
+#Parent-Card{
+    /* line-height: 80px; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
+}
+#card-body-header>img{
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+.card{
+    width: 400px !important;
+    height: 300px !important;
+    cursor: pointer;
+}
+#cards-salary{
+    color: var(--main-color) !important;
+    font-weight: 700;
+}
+.card-text{
+    font-weight: bold;
+    margin-top: 100px;
+}
+#card-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.card-rview{
+    position: absolute;
+    top: 150px;
+    right: 10px;
+}
+#Jobs-card-left-right-arrow{
+    background-color: var(--main-color);
+    padding: 2px;
+    border-radius: 50px;
+    height: 20px;
+    color: var(--text-color-white);
+    margin-top: 140px;
+    cursor: pointer;
+    /* position: absolute;
+    top: 20px;
+    left: 1220px; */
+}
 /* Media Quries */
+@media screen and (max-width:1120px){
+    #Job-Card-1{
+        display: none;
+    }
+}
 @media screen and (max-width:750px) {
     #ribbion-content-p {
         display: none !important;
@@ -477,6 +545,9 @@ body {
     }
     .hero-section-text-p {
         max-width: 82;
+    }
+    #Job-Card-2{
+        display: none;
     }
 }
 @media screen and (max-width:690px){
