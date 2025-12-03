@@ -445,12 +445,12 @@ body {
 }
 
 .modal-header {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     width: 100%;
 }
 
 .modal-header>h1 {
-    color: var(--text-color-white);
+    /* color: var(--text-color-white); */
 }
 
 .modal-header>h1>img {
@@ -685,12 +685,13 @@ body {
     /* border: 1px solid black; */
     width: 80%;
     margin: 30px auto;
+    position: relative;
 }
 
 #Dream-jobs-Section-p {
     text-align: center;
     color: #313131;
-    font-size: 20px ;
+    font-size: 20px;
     font-weight: 500;
     max-width: 500px !important;
     margin: 10px auto;
@@ -702,17 +703,72 @@ body {
 }
 
 /* Our Top Profiles */
-#Caeer-Opurtunity{
+/* Our Top Profiles */
+#Caeer-Opurtunity {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap;
     text-align: center;
-    margin: 100px auto;
-    justify-content: center;    
-    gap: 50px;
-    max-width: 80% !important;
-
-
 }
+
+#Caeer-Opurtunity h1 {
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 60%;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+/* Image container */
+.Caeer-Opurtunity-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive Image */
+.Caeer-Opurtunity-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Vertical line */
+.v-line {
+    border-left: 3px solid var(--main-color);
+    height: 200px;
+}
+
+
+#card-col-2 {
+    height: 200px !important;
+    max-width: 250px;
+    margin: 30px auto;
+    gap: 10px;
+}
+
+#card-col-2>h4,
+#card-col-2>i {
+    color: rgb(104, 81, 255);
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+#Our-Top-Profiles-a {
+    position: absolute;
+    right: 20px;
+    color: var(--main-color);
+}
+
 /* Media Quries */
+@media screen and (max-width:1162px) {
+     .v-line {
+        display: none !important;
+    }
+}
+
 @media screen and (max-width:1120px) {
     #Job-Card-1 {
         display: none;
@@ -802,5 +858,10 @@ body {
 
     #agent-message {
         width: 90%;
+    }
+
+    #Caeer-Opurtunity h1 {
+        font-size: 26px;
+        font-weight: 400;
     }
 }
