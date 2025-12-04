@@ -45,6 +45,10 @@ body {
     color: var(--text-color-white);
 }
 
+.modal-body {
+    font-weight: 700 !important;
+}
+
 .modal-body>button {
     width: 100% !important;
     margin: 5px;
@@ -621,7 +625,6 @@ body {
 
 /* Get Hired Section */
 
-
 #Get-Hired-Section {
     /* width: 80%; */
     margin: 30px auto;
@@ -740,17 +743,6 @@ body {
     border-left: 3px solid var(--main-color);
     height: 200px;
 }
-@media (max-width: 767px) {
-    #Caeer-Opurtunity {
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .v-line {
-        display: none;
-    }
-}
 
 #card-col-2 {
     height: 200px !important;
@@ -772,7 +764,64 @@ body {
     color: var(--main-color);
 }
 
+/* Footer */
+
+footer {
+    position: relative;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    width: 100%;
+    padding: 80px 0 50px;
+    color:var(--text-color-white);
+}
+#footer-top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    /* border: 1px solid white; */
+}
+#footer-top-second-section{
+    /* display: flex;    */
+    padding: 30px 60px;
+    gap: 100px;
+    /* border: 3px solid red; */
+}
+#footer-details{
+    width: 500px;
+    line-height: 30px;
+}
+#footer-media{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+#footer-social-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-top: 10px;
+}
+#footer-contact-section{
+    /* border: 3px solid blue; */
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    line-height: 40px;
+}
+
 /* Media Quries */
+
+@media (max-width: 767px) {
+    #Caeer-Opurtunity {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .v-line {
+        display: none;
+    }
+}
 
 @media screen and (max-width:1120px) {
     #Job-Card-1 {
